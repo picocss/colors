@@ -1,6 +1,6 @@
 {
   "name": "@picocss/colors",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Lucas Larroche",
   "main": "css/pico.colors.min.css",
   "homepage": "https://picocss.com",
@@ -22,7 +22,7 @@
   "scripts": {
     "✨": "run-s build --silent",
     "build": "run-s start lint \"build:*\" done --silent",
-    "watch": "nodemon -q --watch scss/ --ext scss --exec 'run-s build'",
+    "dev": "nodemon -q --watch scss/ --ext scss --exec 'run-s build'",
     "lint": "run-s \"lint:*\" --silent",
     "lint:prettier": "prettier --write --loglevel silent 'scss/**/*.scss'",
     "lint:sort-scss": "postcss --config scss ./scss/**/*.scss --replace",
@@ -37,16 +37,16 @@
     "done": "echo '\\033[32m[@picocss/colors] ✨ Done\\033[0m'"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.12",
+    "autoprefixer": "^10.4.13",
     "clean-css-cli": "^5.6.1",
     "css-declaration-sorter": "^6.3.1",
     "nodemon": "^2.0.20",
     "npm-run-all": "^4.1.5",
-    "postcss": "^8.4.17",
-    "postcss-cli": "^10.0.0",
-    "postcss-scss": "^4.0.5",
-    "prettier": "2.7.1",
-    "sass": "^1.55.0"
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "postcss-scss": "^4.0.6",
+    "prettier": "^2.8.1",
+    "sass": "^1.57.1"
   },
   "browserslist": [
     ">= 0.5%",
