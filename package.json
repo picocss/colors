@@ -1,6 +1,6 @@
 {
   "name": "@picocss/colors",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Lucas Larroche",
   "main": "css/pico.colors.min.css",
   "homepage": "https://picocss.com",
